@@ -17,7 +17,7 @@ namespace Automation_task.Test
         [TearDown]
         public void ShutDown()
         {
-            //driver.Quit();
+            driver.Quit();
         }
        
         [Test]

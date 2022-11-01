@@ -1,0 +1,19 @@
+oddNumbers = 0
+evenNumbers = 0
+zeroNumbers = 0
+for i in range(10):
+    try:
+        j = int(input("Enter integer: "))
+        if j != 0 and j % 2 == 0:
+            oddNumbers += 1
+        elif j == 0:
+            zeroNumbers += 1
+        else:
+            evenNumbers += 1
+    except ValueError:
+        print("invalid input")
+        break
+
+print("There are {0} odd numbers.".format(oddNumbers),
+      "\nThere are {0} even numbers".format(evenNumbers),
+      "\nThere are {0} zero numbers".format(zeroNumbers))

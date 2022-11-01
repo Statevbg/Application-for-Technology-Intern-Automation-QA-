@@ -9,10 +9,10 @@ zeroNumbers = 0
 for i in range(10):
     try:
         j = int(input("Enter integer: "))
-        if j != 0 and j % 2 == 0:
-            oddNumbers += 1
-        elif j == 0:
+        if j == 0:
             zeroNumbers += 1
+        elif j != 0 and j % 2 == 0:
+            oddNumbers += 1
         else:
             evenNumbers += 1
     except ValueError:

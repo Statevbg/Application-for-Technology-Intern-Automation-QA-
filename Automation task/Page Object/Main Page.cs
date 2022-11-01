@@ -22,7 +22,7 @@ namespace Automation_task.Page_Object
         public IWebElement submitButton => driver.FindElement(By.CssSelector("input[value='submit']"));
 
       
-        String name = "DimitarStatev";
+        String name = "randomName";
         String pass = "randomPassword";
         String comment = "this comment is random";
 
